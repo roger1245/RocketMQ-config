@@ -31,7 +31,7 @@ error_exit ()
 export JAVA_HOME
 export JAVA="$JAVA_HOME/bin/java"
 export BASE_DIR=$(dirname $0)/..
-export CLASSPATH=.:${BASE_DIR}/conf:${CLASSPATH}
+export CLASSPATH=${BASE_DIR}/lib/rocketmq-namesrv-4.8.0.jar:${BASE_DIR}/lib/*:${BASE_DIR}/conf:${CLASSPATH}
 
 #===========================================================================================
 # JVM Configuration
